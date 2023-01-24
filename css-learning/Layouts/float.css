@@ -1,0 +1,12 @@
+img {
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin: 10px;
+  }
+  .username {
+    font-weight: bold;
+  }
+  .clear{
+    clear:both;
+  }

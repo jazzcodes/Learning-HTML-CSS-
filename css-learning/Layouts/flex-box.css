@@ -1,0 +1,17 @@
+.container{
+    display:flex;
+    border:5px solid purple;
+    height: 50vh;
+    flex-direction: column;
+    /* row by default*/
+
+}
+
+.box{
+    height:100px;
+    width:100px;
+    background-color: pink;
+    border: 5px solid black;
+    margin: 5px;
+    align-self:center;
+}

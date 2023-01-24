@@ -1,0 +1,22 @@
+.box{
+    border: 5px solid purple;
+    width:300px;
+    height:300px;
+    padding:10px;
+    margin:20px;
+    margin-top:50px;
+    overflow:auto; 
+    /* overflow */
+} 
+/* box size changes wrt padding and border coz box-sizing: content-box by default */
+
+.border-box{
+    box-sizing:border-box;
+    border: 5px solid purple;
+    width:300px;
+    height:300px;
+    padding:10px;
+    margin:20px;
+    margin-top:50px;
+}
+/* (box size same irrespective of padding and border) */
