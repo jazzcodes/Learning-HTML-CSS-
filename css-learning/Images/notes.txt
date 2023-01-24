@@ -1,0 +1,39 @@
+Lec-1 Image Types and Formats
+1. raster (JPEG, GIF, PNG, WebP(modern but not supported in IE))
+2. vector (SVG - Scalable Vector Graphics)
+----------
+Lec-2 Content Images
+----------
+Lec-2 Background Images
+background: url();
+background-repeat: no-repeat/repeat-x/repeat-y;
+background-position:(top left by default) __ px(horizontal) ___ px vertical;
+can be relative uits too like 100% in horizontal (right in it's container)
+background-size: 100% 200px/conver
+height:100vh(body element)
+background-attachment: fixed;
+(text scrolls, bg fixed relative to viewport and a bit smaller)
+----------
+Lec-3 CSS Sprites (large files, not flexible)
+(optimization technique)
+flaticon.com (png icons)
+cssspritestool.com (sprite generator)
+----------
+Lec-4 Data URLs (URIs) (size of embedded code>size of the resource)
+cssportal.com/image-to-data/
+Data URI generator
+----------
+Lec-5 Clipping
+css clip generator
+clip-path: (generated values)
+----------
+Lec-6 Filters
+internet 
+pseudo-selectors: active visited hover
+----------
+Lec-7 Supporting High Density Screens
+srcset="..,..., and so on" in html img tag
+----------
+Lec-8 Resolution Switching
+----------
+Lec-9 

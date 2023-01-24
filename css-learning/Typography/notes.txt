@@ -1,0 +1,104 @@
+Lec-1 Styling Fonts
+1. font families 
+   1. serif
+   2. sans-serif
+   3. monospace
+   These families have further different fonts (font stack)
+   (web safe fonts)- arial, helevtica, georgis, times new roman
+
+2. font-weight: numeric value - 900 (boldness) or keywords - bold, normal
+ctrl+space to see options
+
+3. font-style: italic
+4. font-size: large or numeric values
+5. color: black (by default) or #000 or #000000
+use 111 or 222 (shades of grey) and not black
+
+Lec-2 Embedding Web-Fonts
+
+font websites
+1. fontsquirrel.com
+best free font - open sans
+(ttf file) and convert to woff format using generator
+canIuse? to verify whetherthe format is supported by various websites
+font formats
+ttf, otf, eot,
+woff,woff 2.0 - more compressed and used for  web pages
+
+2. fonts.com
+3. myfonts.com
+
+-> css
+  1. fonts 
+  open sans
+  2. normalize.css
+  3. styles.css
+
+  -> open stylesheet.css in fonts folder and change url of font location
+  you can name them accordingly.
+  @font-face rule to register the font and then use it like a normal form but with '' quotes
+  
+  3. Flash of Unstyled Text (FOUT)
+  - disable cache (browser's permanent storage) to see this
+  -throttling->slow 3G
+  - fallback text will be shown initially
+  (may cause some layout issues)
+
+  font-display: auto (can result in flash of invisible text )
+  font-display: swap (swap it with other font in font-stack)
+  font-display: fallback (swap it with other font in font-stack (doesn't have to wait for 10 sec or some time period waiting for original text as in))
+  font-display: block (font becomes invisible and on loading it appears) -> not useful when font never gets loaded)
+  font-display: optional (like fallback) (best case) (less layout change)
+
+  -> subsetting can also be used
+
+  Lec-3 Font Services
+
+  - google web fonts
+  - adobe fonts
+  - fonts.com
+  - fontdeck.com
+
+  connect with <link>
+
+  Lec-4 System Font Stack
+  tells the browser to use user's OS font style.
+  font-family: -apple-system ..... and so on
+
+  Lec-5 Sizing Fonts
+  font-size: 20px; no pixels use rem (62.5% html element font-size)
+  @media screen... to make site responsive
+  type-scale.com
+ 
+  Lec-6 Vertical Spacing
+   Law of Proximity - Objects that are closer are paerceived to be related
+   use 'margin' so that this principle isn't violated
+   line-height: 1.5rem (for line separation)
+   font-size affects the line-height
+   so use without any unit (it takes it as a multiplier)
+  
+  Lec-7 Horizontal Spacing
+  letter-spacing: 1px;(px not rem(greater space in rem))
+  for headings use a negative value (-1) (more compact)
+  word-spacing:5px;
+  width:50ch;(space of 50 zeroes) (60-70 chars) (line length)
+
+  Lec-8 Formatting Text
+  text-align:left(default)(best)/align/center/justify
+  text-indent:1rem (for first line only) -> use relational selectors to indent the subsequent paragraph's first line.
+  text-decoration:underline/line-through(for prices not valid)
+  text-transfrom: capitalize
+  white-space:no-wrap (controls wrapping )
+  to truncate text-
+  width:50ch
+  white-space:no-wrap
+  overflow:hidden;
+  text-overflow:ellipsis; (shows 3 dots '...' )
+  ------
+  line-clamp:3; (new one) (truncates after 3rd line)
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 3px dotted #999;
+  --------
+  direction:ltr (by default)
+  direction:rtl (for Iranians, etc)
