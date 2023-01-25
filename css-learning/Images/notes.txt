@@ -36,4 +36,29 @@ srcset="..,..., and so on" in html img tag
 ----------
 Lec-8 Resolution Switching
 ----------
-Lec-9 
+Lec-9 Modern Formats
+convert into WebP
+cloudconvert.com
+img tag
+but for browsers that don't support WebP
+use picture element
+<picture>
+<source type="image/webp" scrset"..,..., and so on">
+<source type .....>
+<img src="" alt=""> (alt text therefore img tag always added) so that for browsers who don't support picture element, this gets displayed
+</picture>
+----------
+Lec-9 Art Direction
+picture element
+<picture>
+<source media="(max-width:500px)" srcset="img1.jpg"/>
+....min-width>....img2.jpg
+</picture>
+----------
+Lec-10 Scalable Vector Graphics (SVG)
+svgbackgrounds.com
+----------
+Lec-10 Font Icons
+font awesome 
+ionicons
+material design icons
