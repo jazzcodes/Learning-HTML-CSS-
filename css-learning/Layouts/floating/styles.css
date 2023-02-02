@@ -1,0 +1,44 @@
+.tweet{
+
+}
+
+.avatar{
+    width:4rem;
+    height: 4rem;
+    background-color: purple;
+    float:left;
+    
+}
+
+.clear{
+    clear:both;
+}
+
+/*
+
+clear - used to remove the flowing elements around the float
+other way of writing clear-fix 
+ 
+second- used to overcome parent collapsing (i.e when parent ignores the floated element and fits all other elements except the floated one) 
+ 
+ 
+ */
+
+ /* another way 
+  tweet::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+ 
+ */
+
+
+ /* another way 
+  .clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+ another way : overflow: hidden in tweet container
+ */

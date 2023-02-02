@@ -1,0 +1,7 @@
+form{
+    padding:2rem;
+}
+
+textarea{
+    resize:none; /* to stop resizing */
+}

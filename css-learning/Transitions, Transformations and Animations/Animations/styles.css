@@ -1,0 +1,42 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes pop {
+
+    0%{
+        transform: scale(1);
+    }
+    
+
+    25%{
+        transform: scale(2);
+    }
+
+    50%{
+        background-color: blueviolet;
+    }
+
+    100%{
+        background-color: black;
+    }
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: greenyellow;
+    /* animation: pop 4s ease-in 1s infinite alternate; */
+
+    
+}
+
+/* re-usable animations */
+.animation-pop{
+    animation: pop 4s ease-in 1s infinite alternate;
+}

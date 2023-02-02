@@ -20,7 +20,7 @@ font websites
 1. fontsquirrel.com
 best free font - open sans
 (ttf file) and convert to woff format using generator
-canIuse? to verify whetherthe format is supported by various websites
+canIuse? to verify whether the format is supported by various websites
 font formats
 ttf, otf, eot,
 woff,woff 2.0 - more compressed and used for  web pages

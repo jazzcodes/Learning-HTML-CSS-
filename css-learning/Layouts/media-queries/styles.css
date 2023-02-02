@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction:column;
+}
+
+div:nth-of-type(1){
+    background-color: blue;
+
+}
+
+div:nth-of-type(2){
+    background-color: pink;
+}
+
+@media screen and (min-width:500px){
+    .container{
+        flex-direction: row;
+    }
+}

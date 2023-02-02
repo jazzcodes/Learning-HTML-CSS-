@@ -1,0 +1,22 @@
+body{
+    margin:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.box:hover{
+    /* transform:rotate(50deg); */
+    /* transform:scale(1.5); */
+    /* transform:skew(-15deg); */
+    /* transform:translate(10px); -> horizontal only*/
+    /* transform:translate(10px,10px); */
+    transform:translateX(10px) scale(2) rotate(20deg) ;
+}

@@ -1,0 +1,53 @@
+.box {
+
+  width:300px;
+  height: 300px;
+  background-color: purple;
+  border:10px solid pink;
+  padding:5px;
+}
+
+/* padding and border increases the size of the element */
+
+.box-2 {
+
+    width:300px;
+    height: 300px;
+    background-color: purple;
+    border:10px solid pink;
+    padding:5px;
+    box-sizing:border-box; /*by default-content-box*/
+  }
+   /* content box size remains same */
+
+*{
+    box-sizing:border-box;
+}
+/* makes all elements border-box except pseudo-elements */
+
+.box::before{
+content:'Hello';
+}
+
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+/*
+div - block (height - width)
+span - inline (do not respect height - width)
+therefore, display:inline-black
+this has properties -> on same line like inline but has height and width as block
+
+also, 2 spans with display inline block <span> ...</span>
+<span> ...</span>
+are separated by some space (collective space)
+while when we keep them in one line <span>....</span><span>...</span>, they are joined together.
+
+
+
+
+
+
+*/
+

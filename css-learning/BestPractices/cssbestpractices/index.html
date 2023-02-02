@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM</title>
+  </head>
+  <body>
+    <!-- block -->
+    <div class="card">
+      <!-- block ... use __ to separate a block from an element-->
+      <header class="card__header">
+        <!-- block -->
+        <span class="card__price"></span>
+      </header>
+      <!-- block -->
+      <div class="card__body">
+        <!-- independent element that can be used outside card hence not named as card__btn -->
+        <button class="btn"></button>
+      </div>
+    </div>
+
+    <!-- block-> use -- to separate a block from a modifier(special appearance of card) -->
+    <div class="card card--popular">
+      <!-- block ... use __ to separate a block from an element-->
+      <header class="card__header">
+        <!-- block -->
+        <span class="card__price"></span>
+      </header>
+      <!-- block -->
+      <div class="card__body">
+        <!-- independent element that can be used outside card hence not named as card__btn -->
+        <button class="btn"></button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+html{
+    margin: 10px;
+}
+
+.container{
+    height:50rem;
+    width:50rem;
+    border:5px solid gray;
+    display:flex;
+    flex-direction:column; /*column-reverse, row(default), row-reverse */
+    justify-content: center;  /*main - horizontal(row) vertical (column)*/
+    align-items:center; /*cross - vertical(row) horizontal (column)*/
+}
+
+.box{
+    height:5rem;
+    width:5rem;
+    background-color: blueviolet;
+    margin:1rem;
+}
+
+/* align-content used when more no. of lines of elements and align-content specifies alignmentn as a whole
+flex-wrap:wrap; (no-wrap by default)
+
+Applied on items only not container! 
+and flex-grow:2;
+flex-shrink:2;
+flex-basis:20rem;
+flex: (grow) (shrink/basis) or (grow) (shrink) (basis) 
+align-items: for alignment of individual items 
+

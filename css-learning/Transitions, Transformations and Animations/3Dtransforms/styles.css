@@ -1,0 +1,37 @@
+body{
+    margin:10px;
+    perspective:200px ;
+}
+/* when 2 divs are placed in container, these transforms behave differently than otherwise*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    
+}
+.container:hover .box{
+        transform: rotateY(45deg);
+
+}
+
+.container:hover .special-box{
+    transform: rotateY(90deg);
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: plum;
+   
+}
+
+.box:hover{
+    /* transform: perspective(200px) translateZ(20px); */
+    /* transform: perspective(200px) rotateZ(20deg); */
+    /* transform: perspective(200px) rotateY(20deg); */
+    transform-origin:0 0; /* left top corner */
+    transform-origin:0 50%; /* left top corner */
+}

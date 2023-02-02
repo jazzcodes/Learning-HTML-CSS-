@@ -1,0 +1,50 @@
+/* 
+relative units- (responsive, scalable)
+% - relative to the size of the container (parent)
+vw, vh - relative to the size of the viewport
+em,rem- relative to the font size
+
+absolute units-
+px 
+fixed -> e.g - if top-border specified 
+
+
+
+*/
+body{
+    /* by default width=100% and height=0*/
+    
+}
+
+/* .box{
+    width:50%;
+    height:200px;
+    background-color: blueviolet;
+} */
+
+.box{
+    /*  vw-viewport width  vh-viewport height   */
+    width:50vw;  /*50 percent of the vw */
+    height:50vh;
+    background-color: blueviolet;
+}
+
+.box{
+    /*  em - x em *font of the current element (if no font in the current, look up the parent -> finally html doc (by default 16px))  */
+    width:10em;  /*50 percent of the vw */
+    height:10em;
+    background-color: blueviolet;
+}
+
+/* but this follows heirarchy if not font-size isn't available in the element, so we have rem
+
+x rem = x*font size of the root element (html->16px) 
+ but gonna get complex for values like 15 as 15*16.. and so on
+
+ so use a cool trick
+
+ html{
+    font-size:62.5%; (62.5% of 16px=10px)
+ }
+*/
+

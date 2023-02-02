@@ -1,0 +1,13 @@
+p{
+    padding:20px;  /* (trbl)*/ 
+    margin:0;        /*16px by default in some browsers*/
+}
+
+/* 40px gap */
+
+p{
+    padding:0;
+    margin:20px;
+}
+
+/* results in margin collapsing - 20px gap*/

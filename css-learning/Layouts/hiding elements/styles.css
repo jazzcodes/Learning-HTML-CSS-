@@ -1,0 +1,12 @@
+/* .first{
+    display:none;
+}   element removed*/
+
+.first{
+    visibility:hidden;
+}
+/* space of element visible */
+
+p{
+    font-size:5rem;
+}

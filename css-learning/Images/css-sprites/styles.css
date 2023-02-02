@@ -1,0 +1,31 @@
+
+
+
+.bg-cat_surprised {
+    width: 500px; height: 500px;
+    background: url('css_sprites.png') -10px -10px;
+    display: inline-block;
+}
+
+
+
+.bg-cat_love {
+    width: 500px; height: 500px;
+    background: url('css_sprites.png') -530px -10px;
+    display: inline-block;
+}
+
+
+
+.bg-cat_happy {
+    width: 500px; height: 500px;
+    background: url('css_sprites.png') -10px -530px;
+    display: inline-block;
+}
+
+
+.bg-bg_cat {
+    width: 500px; height: 500px;
+    background: url('css_sprites.png') -530px -530px;
+    display: inline-block;
+}

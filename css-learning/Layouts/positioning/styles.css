@@ -1,0 +1,84 @@
+.boxes{
+    border: 10px solid blue;
+    width:200vh;
+    height:40vw;
+    position: relative;
+}
+
+.box{
+    height: 6rem;
+width: 6rem;
+}
+
+.box-one{
+    background-color: aqua;
+}
+
+/* 
+.box-two{
+    background-color: black;
+    position:relative;
+    left:4rem;
+    bottom:2rem;
+    z-index:-1;
+} */
+/* .box-two{
+    background-color: black;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+} */
+
+.box-two{
+    background-color: black;
+    position:fixed;
+    left:4rem;
+    right:4rem;
+    width: auto;
+
+
+}
+
+
+.box-three{
+    background-color: pink;
+}
+
+/*
+
+1. by default position: static (normal position)
+2. position:relative (relative to its normal position)
+    left:4rem; (4rem gap from left)
+    bottom:2rem; (2 rem gap from bottom)
+    - ve values opposite result
+
+    -> stacking order 
+    z-index:-1/1;(negative, 0 , positive)
+ 3. ->  if u wanna position relative to container
+  put position: relative in container
+  +
+  in item
+  position: absolute;
+  left:0;
+  bottom:0; 
+(positions at left bottom)
+and other elements behave as if absolute element doesn't exist (i.e they come closer)
+
+4. position:fixed; in item
+position:relative in container 
+for nav menu placement
+
+even when page scrolled
+
+5. another way to set height width of div
+ position:relative in container
+ position:fixed in item
+ set left and right values
+ width:auto;
+ 
+
+
+
+
+*/

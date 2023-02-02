@@ -1,0 +1,21 @@
+.box{
+    height: 300px;
+    width:300px;
+    background-color: brown;
+    overflow:auto;
+}
+/*
+overflow:auto; (best)
+overflow:hidden; (by default)
+overflow:scroll;
+overflow-x:
+overflow-y:
+overflow: (x) (y) 
+
+
+
+
+
+
+
+*/

@@ -19,7 +19,8 @@ Lec-3 CSS Sprites (large files, not flexible)
 flaticon.com (png icons)
 cssspritestool.com (sprite generator)
 ----------
-Lec-4 Data URLs (URIs) (size of embedded code>size of the resource)
+Lec-4 Data URLs (URIs)
+limitations - (size of embedded code>size of the resource), increased complexity (less flexible), slow on mobile
 cssportal.com/image-to-data/
 Data URI generator
 ----------
@@ -36,6 +37,37 @@ srcset="..,..., and so on" in html img tag
 ----------
 Lec-8 Resolution Switching
 ----------
+Lec-5 Clipping
+css clip generator
+clip-path: (generated values)
+----------
+Lec- High Density Screens 
+meal.jpg standard screens
+meal@2x.jpg  high density screens
+meal@3x.jpg  high density screens
+(used only on fixed sized images)
+srcset used
+srcset="
+images/meal.jpg    1x,
+images/meal@2x.jpg 2x,
+images/meal@3x.jpg 3x
+"
+----------
+different screens 
+srcset="
+images/meal.jpg 400w,
+images/meal@2x.jpg 800w,
+images/meal@3x.jpg 1200w
+"
+w unit used
+sizes=
+"
+(max-width: 500px) 100vw,
+(max-width: 700px) 50vw,
+33vw
+"
+resposivebreakpoints.com
+
 Lec-9 Modern Formats
 convert into WebP
 cloudconvert.com
@@ -43,20 +75,20 @@ img tag
 but for browsers that don't support WebP
 use picture element
 <picture>
-<source type="image/webp" scrset"..,..., and so on">
-<source type .....>
-<img src="" alt=""> (alt text therefore img tag always added) so that for browsers who don't support picture element, this gets displayed
+<source type="image/webp" scrset" ">
+<source type="image/jpeg" scrset"">
+<img src="image/jpeg" alt=""> (alt text therefore img tag always added) so that for browsers who don't support picture element, this gets displayed
 </picture>
 ----------
 Lec-9 Art Direction
 picture element
 <picture>
-<source media="(max-width:500px)" srcset="img1.jpg"/>
-....min-width>....img2.jpg
+<source media="(max-width:500px)" srcset="img-cropped.jpg"/>
+<source media="(min-width:501px)" srcset="img.jpg"/>
 </picture>
 ----------
 Lec-10 Scalable Vector Graphics (SVG)
-svgbackgrounds.com
+svgbackgrounds.com 
 ----------
 Lec-10 Font Icons
 font awesome 

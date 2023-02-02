@@ -1,0 +1,31 @@
+body{
+    margin:10px;
+
+}
+
+/* Law of Proximity - use margin settings */
+
+h1{
+    margin:3rem 0 1rem;
+
+}
+/* top margin>bottom one */
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    /*  better to use factor (1.5 is better) (to avoid changes when font-size changed in future) (u can use rem also */
+}
+
+p:nth-of-type(3){
+    font-size: 1rem;
+    line-height: 1.5;
+
+    /*  better to use factor (1.5 is better) (to avoid changes when font-size changed in future) (u can use rem also */
+    letter-spacing: -1px; /* use absolute units here */
+    word-spacing: 1px;
+    width:50ch;  /* (width of 50 zeroes) */
+
+}
+
+

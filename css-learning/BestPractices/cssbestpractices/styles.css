@@ -1,0 +1,140 @@
+/* 
+
+points
+1. follow a naming convention
+.nav-bar (kebab case)
+.navBar (camel case)
+.NavBar (pascal case)
+.nav_bar
+
+2. create logical sections in your stylesheet 
+for different styelesheets - SASS
+but for now - create logical sections in your stylesheet 
+
+/*Basic Styles */
+/* *{
+
+}
+
+html{
+
+} */
+
+/*Typography */
+/* 
+h1,h2,h3{
+
+} */
+
+/*Forms */
+
+/*Navigation Bar */
+
+
+/* 3. avoid over-specific selectors
+4. avoid !important keyword
+5. sort css properties -> command palette (sort lines ascending)
+6. take advantage of style inheritance
+7. extract repetitive patterns (OOPS)
+8. avoid repetitive values (Keep it DRY)
+ */
+
+/* 
+Variables
+(html)
+:root{
+       --color-primary:yellow;
+       --border-size:2px;
+       --border-radius:5px;
+
+}
+
+.one{
+    background-color:var(--color-primary);
+
+}
+
+.two{
+
+background-color:var(--color-primary);
+
+}
+
+
+OOPS
+
+1. separate container from content
+.hero .btn{
+  -style defined-
+
+}
+.side-bar .btn{
+  -style defined-
+
+}
+repetition
+insted do-
+.btn{
+  -style defined-
+
+}
+only 
+and this button is applied everywhere
+
+2. separate structure from skin
+.btn{
+  -style defined-
+  background-color:yellow;
+}
+.btn-blue{
+  -style defined-
+  background-color:blue;
+}
+but DRY
+so
+
+.btn{
+  -style defined-
+
+}
+
+.btn-primary{
+    background-color:yellow;
+}
+
+.btn-secondary{
+    background-color:blue;
+}
+
+banners?
+card
+
+badges - 20% off etc , lists, btns are building blocks (repeated elements)
+BEM
+
+A naming convention- Block Element Modifier
+refer index.html
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
