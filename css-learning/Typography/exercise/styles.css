@@ -1,0 +1,54 @@
+html{
+    font-size:62.5%;
+    
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+img{
+    width:100%;
+}
+
+.container{
+    width:1140px;
+    margin: auto;
+    border:3px solid black;
+    padding:1rem; 
+}
+
+.group ul{
+    margin-bottom: 4rem;
+    margin-top: -1rem;
+  }
+
+
+
+
+.group li{
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+
+}
